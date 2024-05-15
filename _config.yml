@@ -29,7 +29,7 @@ github:
   username: cubeDHS2017 # change to your github username
 
 twitter:
-  username: twitter_username # change to your twitter username
+  username: cubeDHS # change to your twitter username
 
 social:
   # Change to your full name.
@@ -38,7 +38,7 @@ social:
   email: douglass226@outlook.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your twitter homepage
+    - https://twitter.com/cubeDHS # change to your twitter homepage
     - https://github.com/cubeDHS2017 # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
@@ -69,7 +69,7 @@ analytics:
     id: # fill in your Matomo ID
     domain: # fill in your Matomo domain
   cloudflare:
-    id: # fill in your Cloudflare Web Analytics token
+    id: "b049b04e7f41488fb6141d6f2e13d43d"
 
 # Pageviews settings
 pageviews:

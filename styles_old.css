@@ -1,0 +1,32 @@
+body {
+    background-color: #282828; /* Gruvbox dark background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.content {
+    width: 33.33%;
+        height: 33.33%;
+    border: 2px solid white;
+    border-radius: 10px; /* Add rounded corners */
+    box-sizing: border-box;
+}
+h1 {
+    color: rgb(170, 33, 33);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+}
+h3 {
+    color: rgb(175, 164, 164);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    border: 2px solid white;
+    border-radius: 10px; /* Add rounded corners */
+}

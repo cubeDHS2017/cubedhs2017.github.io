@@ -1,0 +1,52 @@
+body {
+    background-color: #282828;
+    color: #ebdbb2;
+}
+
+h1 {
+    color: #83a598;
+}
+
+nav {
+    background-color: #3c3836;
+    top: 0px;
+    position: fixed; /* Fixes the navbar at the top */
+    left: 0;
+    right: 0;
+    padding: 10px 0; /* Padding for the navbar */
+    z-index: 1000; /* Ensures it stays above other content */
+}
+
+.content {
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 700px;
+}
+
+a.normal-link {
+    color: inherit;         /* Makes the link color the same as surrounding text */
+    text-decoration: none;  /* Removes the underline */
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-column, .right-column {
+    width: 48%;
+}
+
+.left-column {
+    padding-right: 20px;
+}
+
+.right-column {
+    padding-left: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}

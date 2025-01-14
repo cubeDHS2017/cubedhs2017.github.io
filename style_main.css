@@ -3,28 +3,50 @@
 
 
 body {
-  background-color: #282828;
-  color: #ebdbb2;
+  background-color: #434545;
+  color: #e1e6e5;
   text-align: center;
   padding-top: 60px;
 }
 
 
 nav {
-  background-color: #3c3836;
+  display: flex;
+  background-color: #303030;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 50px;
-  color: #ebdbb2;
+  color: #e1e6e5;
   z-index: 1000;
   text-align: left;
 }
 
 
+nav a {
+  padding: 15px 10px;
+}
+
+
 .content {
+    margin: auto;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
     text-align: left;
+}
+
+.center-title {
+    text-align: center;
+}
+
+.bubble {
+    padding: 10px;
+    justify-content: center;
+    border: 2px solid #63abad;
+    border-radius: 15px;
+    margin: 10px;
 }
 
 

@@ -8,7 +8,6 @@ title: "Happy Jekylling!"
 Start developing your Jekyll website.
 
 
-```
 <ul>
   {% for post in site.posts %}
     <li>
@@ -16,5 +15,3 @@ Start developing your Jekyll website.
     </li>
   {% endfor %}
 </ul>
-```
-

@@ -1,0 +1,145 @@
+:root {
+    --text: #262626;
+    --bg: #ededed;
+    --bg2: #b5b5b5;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  text-align: center;
+  padding-top: 60px;
+  margin: 0;
+  font-family: "Space mono";
+  font-size: 20px;
+}
+
+nav {
+  display: flex;
+  background-color: #303030;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  color: #e1e6e5;
+  z-index: 1000;
+  text-align: left;
+}
+
+nav a {
+  padding: 15px 10px;
+}
+
+.content {
+    margin: auto;
+    width: 50%;
+    min-width: 600px;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+    .content {
+        min-width: calc(100vw - 20px); /* Subtracts 20px from viewport width */
+    }
+}
+
+.center-title {
+    text-align: center;
+}
+
+/*
+.bubble {
+    padding: 10px;
+    justify-content: center;
+    border: 2px solid #63abad;
+    border-radius: 15px;
+    margin: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+*/
+
+.bubble {
+    padding: 10px;
+    justify-content: center;
+    border: 2px solid #63abad;
+    border-radius: 15px;
+    margin: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+
+/*
+.bubble:hover {
+    background-color: red;
+}
+*/
+
+.bubble.show:hover {
+    transform: scale(1.03);
+}
+
+
+.bubble.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+footer {
+  position: sticky;
+  width: 100%;
+  background-color: var(--bg2);
+  color: var(--text);
+  text-align: center;
+  padding: 20px 0; /* Add padding top and bottom */
+  margin: 0; /* Remove any margin */
+  box-sizing: border-box; /* Include padding in the element's total width/height */
+}
+
+
+footer .footer-content {
+  width: 100%;
+  max-width: 1200px; /* or whatever max-width you prefer */
+  margin: 0 auto; /* Center the content */
+  padding: 0 20px; /* Add some horizontal padding */
+  font-size: 16px;
+}
+
+.content-wrapper {
+    min-height: 100vh;
+    background-color: var(--bg);
+    position: relative;
+    z-index: 1;
+}
+
+.themeToggle {
+    color: red;
+    background-color: green;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text: #e1e6e5;
+        --bg: #434545;
+        --bg2: #303030;
+    }
+}
+
+.dark-mode {
+    --text: #e1e6e5;
+    --bg: #434545;
+    --bg2: #303030;
+}
+
+
+img {
+  border: 1px solid #63abad;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}

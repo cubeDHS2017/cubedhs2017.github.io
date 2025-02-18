@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2024-10-18" />
+  <title>Grafana Health Dashboard</title>
+  <style>
+html {
+color: #1a1a1a;
+background-color: #fdfdfd;
+}
+body {
+margin: 0 auto;
+max-width: 36em;
+padding-left: 50px;
+padding-right: 50px;
+padding-top: 50px;
+padding-bottom: 50px;
+hyphens: auto;
+overflow-wrap: break-word;
+text-rendering: optimizeLegibility;
+font-kerning: normal;
+}
+@media (max-width: 600px) {
+body {
+font-size: 0.9em;
+padding: 12px;
+}
+h1 {
+font-size: 1.8em;
+}
+}
+@media print {
+html {
+background-color: white;
+}
+body {
+background-color: transparent;
+color: black;
+font-size: 12pt;
+}
+p, h2, h3 {
+orphans: 3;
+widows: 3;
+}
+h2, h3, h4 {
+page-break-after: avoid;
+}
+}
+p {
+margin: 1em 0;
+}
+a {
+color: #1a1a1a;
+}
+a:visited {
+color: #1a1a1a;
+}
+img {
+max-width: 100%;
+}
+svg {
+height: auto;
+max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+margin-top: 1.4em;
+}
+h5, h6 {
+font-size: 1em;
+font-style: italic;
+}
+h6 {
+font-weight: normal;
+}
+ol, ul {
+padding-left: 1.7em;
+margin-top: 1em;
+}
+li > ol, li > ul {
+margin-top: 0;
+}
+blockquote {
+margin: 1em 0 1em 1.7em;
+padding-left: 1em;
+border-left: 2px solid #e6e6e6;
+color: #606060;
+}
+code {
+font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+font-size: 85%;
+margin: 0;
+hyphens: manual;
+}
+pre {
+margin: 1em 0;
+overflow: auto;
+}
+pre code {
+padding: 0;
+overflow: visible;
+overflow-wrap: normal;
+}
+.sourceCode {
+background-color: transparent;
+overflow: visible;
+}
+hr {
+background-color: #1a1a1a;
+border: none;
+height: 1px;
+margin: 1em 0;
+}
+table {
+margin: 1em 0;
+border-collapse: collapse;
+width: 100%;
+overflow-x: auto;
+display: block;
+font-variant-numeric: lining-nums tabular-nums;
+}
+table caption {
+margin-bottom: 0.75em;
+}
+tbody {
+margin-top: 0.5em;
+border-top: 1px solid #1a1a1a;
+border-bottom: 1px solid #1a1a1a;
+}
+th {
+border-top: 1px solid #1a1a1a;
+padding: 0.25em 0.5em 0.25em 0.5em;
+}
+td {
+padding: 0.125em 0.5em 0.25em 0.5em;
+}
+header {
+margin-bottom: 4em;
+text-align: center;
+}
+#TOC li {
+list-style: none;
+}
+#TOC ul {
+padding-left: 1.3em;
+}
+#TOC > ul {
+padding-left: 0;
+}
+#TOC a:not(:hover) {
+text-decoration: none;
+}
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+</style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Grafana Health Dashboard</h1>
+<p class="date"><a href="2024-10-18" title="wikilink">2024-10-18</a></p>
+</header>
+<h1 id="grafana-health-dashboard"><a href="Grafana Health Dashboard" title="wikilink">Grafana Health Dashboard</a></h1>
+<h3 id="introduction">Introduction:</h3>
+<p>I am a hoarder and I also love data. Because of that when I saw Bryan
+Jenk’s health dashboard I immediately fell in love with the concept and
+started working on my own version. If you have not already see Jenk’s
+setup I would advise you to give his YouTube video showcasing it a
+watch. He has a much more robust system with live data.</p>
+<h3 id="data-collection">Data Collection</h3>
+<p>Before I was able to make those beautiful Grafana dashboards I need
+data. I chose to host a PostgreSQL database in my homelab to hold all my
+data. Then Jenk’s uses a very helpful tool called n8n to collect his
+data and manipulate it before adding it into his database. This is a no
+code tool that is really similar to scratch in how you setup your
+workflow. I will be writing a future blog about this amazing tool and my
+many uses. This tool has some amazing APIs built in nativly but I chose
+to setup my system a little differently.</p>
+<h4 id="weight-data">Weight Data</h4>
+<p>One of the metrics that I am tracking is my weight. I decided that
+since n8n has a nice little feature for doing a form I would use that to
+collect my weight data. The form feature is like a little google form
+which is self hosted on my server. Then every time I insert data into
+it, n8n takes my weight and the time that the form is submitted and then
+adds that data into my PostgreSQL table dedicated to my weights. It then
+sends me a discord notification letting me know that the data transfer
+was successful.</p>
+<h4 id="google-fit-data">Google Fit Data</h4>
+<p>Since I am a pixel user all my health data that my phone collects is
+inside of Google Fit. Unfortunately they recently shutdown their old API
+for accessing that data and now have a new one that is less accessible.
+To use this new API you need to be an Android App. There is an app {{app
+that exports google fit}} that works and is able to export your data but
+it is paid. Since I don’t like spending money I decided to take a
+different route. First I thought that I was going to be able to build a
+simple little Android app but quickly realized that would take some time
+so I put that on hold and went for a simpler solution. Unfortunately
+this way is not able to be as easily automated. it relies on the Google
+Export function that is part of every google account. I just go to my
+page and download all my Google Fit data. Then I take that data and grab
+the .csv file that contains all my calorie, mileage, and step data and
+use n8n to parce it and then insert the data into my PostgreSQL
+database. Since this is not automated I only do this every few weeks but
+I am still able to have my data in my database if my Google account was
+ever deleted or if Google stopped letting people download their
+data.</p>
+<h4 id="strava-data">Strava Data</h4>
+<p>Now for the workout data. Since I recently started running I have my
+data from my runs. Strava has an API which n8n nativelly supports but it
+does not provided the data I need. Strava much like Google lets one
+download their data which is what I do. Then using n8n I parce the data
+and insert it into yet another PostgreSQL table. Strava also gives me
+the GPS data from each of my runs and I would love to find a way to
+store that in my database and create heat-maps of everywhere I have run
+in Grafana but have not figured that out yet because this dashboard is
+still a work in progress.</p>
+<h4 id="strong-data">Strong Data</h4>
+<p>Finally, I do my weight lifting and other workouts using the strong
+app to record each workout. The Strong app provides a way to export all
+your data also which then lets n8n parce ir and add it to a PostgreSQL
+table.</p>
+<h4 id="n8n">n8n</h4>
+<p>Since each of these utilizes n8n I thought it good to do a quick
+little explanation on how I set each workflow up and how to use n8n. I
+am working on another blog post about n8n and it’s many uses. One might
+wonder why I chose to use n8n for my backend coding instead of a
+language like python. My first answer is because that is what Jenk’s
+uses. Secondly, because it is super easy to make the different parts
+work together. It is also really easy to setup and get working so I
+don’t have to sink a bunch of time into programming the back-end.</p>
+<p>In n8n each program is called a workflow so I have a different
+workflow for each data source that I process. Then each workflow starts
+with a trigger. The one that collects my weight that one starts when a
+form is submitted in the form that I am hosting. Then the others as of
+right now I manually trigger them when I do my data exporting from the
+different sources.</p>
+<p>Inside of n8n there is a node that handles the retrieval of data from
+the .csv file and also another node that handles the connection to the
+PostgreSQL database. Then I also utilize a discord node that sends me
+notifications telling me that the operation was successful.</p>
+<h3 id="grafana">Grafana</h3>
+<p>Then the final stop for my data is the Grafana dashboards. This is
+where I am able to take a look at all my data and have a bird’s eye view
+of each of my health metrics. Grafana is amazing because there are so
+many different graph types. The beautiful thing is that each of these
+different {{name}} is all defined by a simple SQL query. That makes the
+data manipulation inside of Grafana almost endless.</p>
+<p>I have xy graphs that show my weight, distance walked, water intake,
+and many other things.</p>
+</body>
+</html>

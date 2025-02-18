@@ -1,36 +1,53 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Douglas&apos; Blog</title>
+    <description></description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 18 Feb 2025 17:03:40 -0500</pubDate>
+    <lastBuildDate>Tue, 18 Feb 2025 17:03:40 -0500</lastBuildDate>
+    <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;h1 id=&quot;why-firefox-is-my-browser-of-choice&quot;&gt;[[why firefox is my browser of choice]]&lt;/h1&gt;
 
-    <channel>
-        <title>Douglas' Blog</title>
-        <link>http://localhost:4000</link>
-        <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-        <description></description>
-        <lastBuildDate>Tue, 18 Feb 2025 15:00:13 -0500</lastBuildDate>
-        
-        <item>
-            <title>Welcome to Jekyll!</title>
-            <link>
-                http://localhost:4000/2025/02/18/Why-Firefox-is-my-Browser-of-Choice.html
-            </link>
-            <description>
-                &lt;h1 id=&quot;why-firefox-is-my-browser-of-choice&quot;&gt;[[why firefox is my browser of choice]]&lt;/h1&gt;
+&lt;p&gt;The browser debate is heated debate and is something I am heavily invested in. With the browser being one of the most used tools on your system I find it important to be using the right browser for your needs. I have been testing and changing browsers for a few years now. Currently I am using Firefox and I’m really enjoying it. In this post I will go through some of the feature I cannot live without and some of the things I don’t like.&lt;/p&gt;
 
-&lt;p&gt;The browser debate is heated debate and is something I am heavily invested in. With the browser being one of the most used tools on your system I find it important to be using the right browser for your needs. I have been testing and changing browsers for a few years now. Cu...
-            </description>
-            <pubDate>Tue, 18 Feb 2025 00:00:00 -0500</pubDate>
-            <guid>
-                http://localhost:4000/2025/02/18/Why-Firefox-is-my-Browser-of-Choice.html
-            </guid>
-        </item>
+&lt;p&gt;This is my blog post that I am working on right now.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;print(&quot;hello world&quot;)
+if debug ==0:
+	print(&quot;nice&quot;)
+x = 4
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sayHello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;Hello World&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`Hello &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;  
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&amp;lt;figure class=&quot;highlight&quot;&amp;gt;&amp;lt;pre&amp;gt;&amp;lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&amp;gt;&amp;lt;span class=&quot;k&quot;&amp;gt;def&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nf&quot;&amp;gt;foo&amp;lt;/span&amp;gt;
+  &amp;lt;span class=&quot;nb&quot;&amp;gt;puts&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;s1&quot;&amp;gt;&apos;foo&apos;&amp;lt;/span&amp;gt;
+&amp;lt;span class=&quot;k&quot;&amp;gt;end&amp;lt;/span&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/figure&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Tue, 18 Feb 2025 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/2025/02/18/Why-Firefox-is-my-Browser-of-Choice.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2025/02/18/Why-Firefox-is-my-Browser-of-Choice.html</guid>
         
-        <item>
-            <title>Testing Second Post</title>
-            <link>
-                http://localhost:4000/2025/02/18/Test-second-post.html
-            </link>
-            <description>
-                &lt;p&gt;Hello how are you today?&lt;/p&gt;
+        
+      </item>
+    
+      <item>
+        <title>Testing Second Post</title>
+        <description>&lt;p&gt;Hello how are you today?&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;[!warning]
@@ -50,13 +67,29 @@ Testing this feature right now&lt;/p&gt;
     &lt;ul&gt;
       &lt;li&gt;nice&lt;/li&gt;
     &lt;/ul&gt;
-  &l...
-            </description>
-            <pubDate>Tue, 18 Feb 2025 00:00:00 -0500</pubDate>
-            <guid>
-                http://localhost:4000/2025/02/18/Test-second-post.html
-            </guid>
-        </item>
+  &lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;cool right now&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;[!] asdlf:w&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;kjsd&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;hi-there&quot;&gt;hi there&lt;/h1&gt;
+&lt;h2 id=&quot;hi-there-1&quot;&gt;hi there&lt;/h2&gt;
+&lt;h3 id=&quot;hi-there-2&quot;&gt;hi there&lt;/h3&gt;
+&lt;h4 id=&quot;hi-there-3&quot;&gt;hi there&lt;/h4&gt;
+&lt;h5 id=&quot;hi-there-4&quot;&gt;hi there&lt;/h5&gt;
+&lt;h6 id=&quot;hi-there-5&quot;&gt;hi there&lt;/h6&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;hello world&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;78&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Tue, 18 Feb 2025 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/2025/02/18/Test-second-post.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2025/02/18/Test-second-post.html</guid>
         
-    </channel>
+        
+      </item>
+    
+  </channel>
 </rss>

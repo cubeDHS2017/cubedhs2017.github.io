@@ -16,3 +16,14 @@ if debug ==0:
 	print("nice")
 x = 4
 ```
+
+
+{% highlight javascript %}
+function sayHello(name) {
+  if (!name) {
+    console.log('Hello World');
+  } else {
+    console.log(`Hello ${name}`);
+  }  
+}  
+{% endhighlight %}

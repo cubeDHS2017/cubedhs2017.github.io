@@ -3,6 +3,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 title: "Douglas' Blog" # the name of your site, e.g. ACME Corp.
 
 
-markdown: kramdown
-highlighter: rouge
+# markdown: kramdown
+# highlighter: rouge
 

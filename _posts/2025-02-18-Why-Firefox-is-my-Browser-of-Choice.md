@@ -27,3 +27,11 @@ function sayHello(name) {
   }  
 }  
 {% endhighlight %}
+
+```
+{% highlight ruby %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
+```

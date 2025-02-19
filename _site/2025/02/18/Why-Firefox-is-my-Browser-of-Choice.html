@@ -1,8 +1,12 @@
+<link href="/assets/css/syntax.css" rel="stylesheet">
+
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
     :root {
-        background-color: grey;
+        color: #675D50;
+        background-color: #F3DEBA;
+        font-size: 18;
     }
 
     a, p, h1, h2, h3 {
@@ -12,12 +16,34 @@
       font-style: normal;
     }
 
+    h1, h2 {
+        color: #ABC4AA;
+    }
+
     main {
         font-size: 1.2rem;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    header {
+        width: 50%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mainl {
+        color: green;
     }
 </style>
 
 
+<header>
+    <div>
+        <a href="http://localhost:4000", class="mainl">test</a>
+        Douglas' Blog    
+    </div>
+</header>
 <div>
     <main>
         <h1 id="why-firefox-is-my-browser-of-choice">[[why firefox is my browser of choice]]</h1>
@@ -26,10 +52,10 @@
 
 <p>This is my blog post that I am working on right now.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print("hello world")
-if debug ==0:
-	print("nice")
-x = 4
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">hello world</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">debug</span> <span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+	<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">nice</span><span class="sh">"</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">4</span>
 </code></pre></div></div>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nf">sayHello</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
@@ -40,12 +66,9 @@ x = 4
   <span class="p">}</span>  
 <span class="p">}</span>  </code></pre></figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-&lt;figure class="highlight"&gt;&lt;pre&gt;&lt;code class="language-ruby" data-lang="ruby"&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;foo&lt;/span&gt;
-  &lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="s1"&gt;'foo'&lt;/span&gt;
-&lt;span class="k"&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-</code></pre></div></div>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">foo</span>
+  <span class="nb">puts</span> <span class="s1">'foo'</span>
+<span class="k">end</span></code></pre></figure>
 
     </main>
 </div>

@@ -6,3 +6,10 @@ title: "Douglas' Blog" # the name of your site, e.g. ACME Corp.
 # markdown: kramdown
 # highlighter: rouge
 
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+

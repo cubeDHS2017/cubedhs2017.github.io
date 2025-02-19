@@ -10,7 +10,7 @@ The browser debate is heated debate and is something I am heavily invested in. W
 
 This is my blog post that I am working on right now.
 
-```
+``` python
 print("hello world")
 if debug ==0:
 	print("nice")
@@ -28,10 +28,8 @@ function sayHello(name) {
 }  
 {% endhighlight %}
 
-```
 {% highlight ruby %}
 def foo
   puts 'foo'
 end
 {% endhighlight %}
-```

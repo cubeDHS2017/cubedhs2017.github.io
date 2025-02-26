@@ -37,17 +37,109 @@
         text-align: center;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 100px;
+    }
+    a:link, a:visited {
+        text-decoration: none;
+        font-weight: normal;
+        font-size: 24px;
+        color: cyan;
     }
     .mainl {
-        color: green;
+        color: purple;
+    }
+    .head-same-line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .head-same-line > * {
+        margin: 5px;
+    }
+    .tags {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tags > * {
+        margin: 5px;
+    }
+    blockquote {
+        background-color: red;
+        border-left: 5px solid #ccc;
+        margin: 1.5em 10px;
+        padding: 0.5em 10px;
+        font-style: italic;
+    }
+    blockquote.note {
+        background-color: #e7f2fa;
+        border-left-color: #2196f3;
+    }
+    blockquote {
+      position: relative;
+      margin: 1.5em 0;
+      padding: 1em 1em 1em 2em;
+      border-left: 4px solid;
+    }
+
+    blockquote::before {
+      position: absolute;
+      top: -0.5em;
+      left: 1em;
+      padding: 0 0.5em;
+      background: white;
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+
+    blockquote::after {
+      position: absolute;
+      top: -0.2em;
+      left: 0.5em;
+      font-size: 1.2em;
+    }
+
+    blockquote.warning {
+      background-color: #fff3e0;
+      border-color: #ff9800;
+    }
+
+    blockquote.warning::before {
+      content: "Warning";
+      color: #ff9800;
+    }
+
+    blockquote.quote {
+      background-color: #e7f2fa;
+      border-color: #2196f3;
+    }
+
+    blockquote.quote::before {
+      content: "Quote";
+      color: #2196f3;
     }
 </style>
 
 
 <header>
-    <div>
-        <a href="{{ site.url }}", class="mainl">test</a>
-        Douglas' Blog    
+    <div class="post-header">
+        <a href="{{ site.url }}", class="mainl">Home</a>
+        <div class="head-same-line">
+            <a href="google.com">About</a>
+            <a href="google.com">Blog</a>
+            <a href="https://www.reddit.com">RSS</a>
+        </div>
+    </div>
+    <hr>
+    <div class="tags">
+    <p>Tags:</p>
+    {%- if page.tags -%}
+        {% for tag in page.tags %}
+            <a href="{{site.baseurl}}/archive.html#{{tag | slugize}}">
+                #{{ tag }}
+            </a>
+        {% endfor %}
+    {%- endif -%}
     </div>
 </header>
 <div>

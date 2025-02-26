@@ -1,16 +1,19 @@
 <link href="/assets/css/syntax.css" rel="stylesheet">
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+    
+
+
+   @import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
     :root {
-        color: #675D50;
-        background-color: #F3DEBA;
+        color: #ccb7a7;
+        background-color: #38322b;
         font-size: 18;
     }
 
     a, p, h1, h2, h3 {
-      font-family: "Fira Code", serif;
+      font-family: "Spectral", serif;
       font-optical-sizing: auto;
       font-weight: <weight>;
       font-style: normal;
@@ -31,18 +34,102 @@
         text-align: center;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 100px;
+    }
+    a:link, a:visited {
+        text-decoration: none;
+        font-weight: normal;
+        font-size: 24px;
+        color: cyan;
     }
     .mainl {
-        color: green;
+        color: purple;
+    }
+    .head-same-line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .head-same-line > * {
+        margin: 5px;
+    }
+    .tags {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tags > * {
+        margin: 5px;
+    }
+    blockquote {
+        background-color: red;
+        border-left: 5px solid #ccc;
+        margin: 1.5em 10px;
+        padding: 0.5em 10px;
+        font-style: italic;
+    }
+    blockquote.note {
+        background-color: #e7f2fa;
+        border-left-color: #2196f3;
+    }
+    blockquote {
+      position: relative;
+      margin: 1.5em 0;
+      padding: 1em 1em 1em 2em;
+      border-left: 4px solid;
+    }
+
+    blockquote::before {
+      position: absolute;
+      top: -0.5em;
+      left: 1em;
+      padding: 0 0.5em;
+      background: white;
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+
+    blockquote::after {
+      position: absolute;
+      top: -0.2em;
+      left: 0.5em;
+      font-size: 1.2em;
+    }
+
+    blockquote.warning {
+      background-color: #fff3e0;
+      border-color: #ff9800;
+    }
+
+    blockquote.warning::before {
+      content: "Warning";
+      color: #ff9800;
+    }
+
+    blockquote.quote {
+      background-color: #e7f2fa;
+      border-color: #2196f3;
+    }
+
+    blockquote.quote::before {
+      content: "Quote";
+      color: #2196f3;
     }
 </style>
 
 
 <header>
-    <div>
-        <a href="http://localhost:4000", class="mainl">test</a>
-        Douglas' Blog    
+    <div class="post-header">
+        <a href="http://localhost:4000", class="mainl">Home</a>
+        <div class="head-same-line">
+            <a href="google.com">About</a>
+            <a href="google.com">Blog</a>
+            <a href="https://www.reddit.com">RSS</a>
+        </div>
     </div>
+    <hr>
+    <div class="tags">
+    <p>Tags:</p></div>
 </header>
 <div>
     <main>

@@ -7,9 +7,11 @@ title: "Douglas' Blog" # the name of your site, e.g. ACME Corp.
 # highlighter: rouge
 
 markdown: kramdown
+# markdown: CustomProcessor
 highlighter: rouge
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+
 
 

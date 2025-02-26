@@ -5,13 +5,13 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 18 Feb 2025 20:03:59 -0500</pubDate>
-    <lastBuildDate>Tue, 18 Feb 2025 20:03:59 -0500</lastBuildDate>
+    <pubDate>Wed, 26 Feb 2025 10:24:59 -0500</pubDate>
+    <lastBuildDate>Wed, 26 Feb 2025 10:24:59 -0500</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
         <title>Welcome to Jekyll!</title>
-        <description>&lt;h1 id=&quot;why-firefox-is-my-browser-of-choice&quot;&gt;[[why firefox is my browser of choice]]&lt;/h1&gt;
+        <description>&lt;h1 id=&quot;why-firefox-is-my-browser-of-choice&quot;&gt;Why Firefox is my browser of choice&lt;/h1&gt;
 
 &lt;p&gt;The browser debate is heated debate and is something I am heavily invested in. With the browser being one of the most used tools on your system I find it important to be using the right browser for your needs. I have been testing and changing browsers for a few years now. Currently I am using Firefox and I’m really enjoying it. In this post I will go through some of the feature I cannot live without and some of the things I don’t like.&lt;/p&gt;
 
@@ -34,10 +34,25 @@
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;
   &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;foo&apos;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;blockquote class=&quot;note&quot;&gt;
+  &lt;p&gt;Testing this right now&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote class=&quot;quote&quot;&gt;
+  &lt;p&gt;Hi there&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote class=&quot;warning&quot;&gt;
+  &lt;p&gt;this is a note&lt;/p&gt;
+&lt;/blockquote&gt;
+
 </description>
         <pubDate>Tue, 18 Feb 2025 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/2025/02/18/Why-Firefox-is-my-Browser-of-Choice.html</link>
         <guid isPermaLink="true">http://localhost:4000/2025/02/18/Why-Firefox-is-my-Browser-of-Choice.html</guid>
+        
+        <category>Software</category>
         
         
       </item>

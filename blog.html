@@ -1,0 +1,25 @@
+---
+layout: default
+title: Blog
+---
+
+<link rel="stylesheet" href="styles.css">
+<h1>{{ page.title }}</h1>
+
+<ul class="post-list">
+  {% for post in site.posts %}
+    <div class="post">
+      <h2>
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      </h2>
+      <p class="post-meta">
+        Published on: {{ post.date | date: "%B %-d, %Y" }}
+        {% assign words = post.content | number_of_words %}
+        | Reading time: {% if words < 360 %}1 min{% else %}{{ words | divided_by:180 }} mins{% endif %}
+        | Word count: {{ words }}
+      </p>
+      <p>{{ post.excerpt }}</p>
+    </div>
+  {% endfor %}
+</ul>
+

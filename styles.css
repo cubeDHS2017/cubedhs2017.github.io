@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
     /* background-color: #38322b;
     color: #ccb7a7; */
@@ -24,12 +28,18 @@ img {
 }
 
 .brief-info {
-    width: 40%;
+    width: 45%;
     text-align: center;
     justify-content: center;
     margin: auto;
     margin-top: 30px;
-    min-width: 320px;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+    .brief-info {
+        width: 90%;
+    }
 }
 
 a:link, a:visited {
@@ -74,6 +84,7 @@ h1 {
     text-decoration-color: white;
 }
 
+
 .post {
     border-style: solid;
     border-color: cyan;
@@ -85,6 +96,36 @@ h1 {
     margin-bottom: 8px;
     border-radius: 0px;
     width: 50%;
-    text-align: center;
+    text-align: left;
     justify-content: center;
+    padding-left: 30px;
+}
+
+.contact {
+    width: 40%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-center {
+    display: flex;
+    margin: auto;
+    align-items: center;   
+}
+
+.contact-phrase {
+    width: 60%;
+}
+
+.contact-list {
+    display: block;
+    margin: auto;
+    align-items: center;
+}
+
+.contact-list > * {
+    padding: 0px;
+    margin-bottom: 12px;
 }

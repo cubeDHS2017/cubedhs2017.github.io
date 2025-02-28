@@ -29,6 +29,7 @@ img {
     justify-content: center;
     margin: auto;
     margin-top: 30px;
+    min-width: 320px;
 }
 
 a:link, a:visited {
@@ -75,9 +76,15 @@ h1 {
 
 .post {
     border-style: solid;
-    border-color: red;
-    border-width: 3px;
-    margin-top: 4px;
-    margin-bottom: 4px;
-    border-radius: 12px;
+    border-color: cyan;
+    border-width: 0px;
+    border-left-width: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 0px;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
 }

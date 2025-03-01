@@ -8,8 +8,8 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 28 Feb 2025 18:37:20 -0500</pubDate>
-    <lastBuildDate>Fri, 28 Feb 2025 18:37:20 -0500</lastBuildDate>
+    <pubDate>Sat, 01 Mar 2025 10:57:46 -0500</pubDate>
+    <lastBuildDate>Sat, 01 Mar 2025 10:57:46 -0500</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
@@ -54,52 +54,6 @@
         <guid isPermaLink="true">http://localhost:4000/2025/02/18/Why-Firefox-is-my-Browser-of-Choice.html</guid>
         
         <category>Software</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Testing Second Post</title>
-        <description>&lt;p&gt;Hello how are you today?&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;[!warning]
-Testing this feature right now&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;right now
-    &lt;ol&gt;
-      &lt;li&gt;cool&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul class=&quot;task-list&quot;&gt;
-  &lt;li&gt;sadlkfj
-    &lt;ul&gt;
-      &lt;li&gt;nice&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;cool right now&lt;/li&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;[!] asdlf:w&lt;/li&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;kjsd&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;hi-there&quot;&gt;hi there&lt;/h1&gt;
-&lt;h2 id=&quot;hi-there-1&quot;&gt;hi there&lt;/h2&gt;
-&lt;h3 id=&quot;hi-there-2&quot;&gt;hi there&lt;/h3&gt;
-&lt;h4 id=&quot;hi-there-3&quot;&gt;hi there&lt;/h4&gt;
-&lt;h5 id=&quot;hi-there-4&quot;&gt;hi there&lt;/h5&gt;
-&lt;h6 id=&quot;hi-there-5&quot;&gt;hi there&lt;/h6&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;hello world&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;78&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-</description>
-        <pubDate>Tue, 18 Feb 2025 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/2025/02/18/Test-second-post.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2025/02/18/Test-second-post.html</guid>
         
         
       </item>

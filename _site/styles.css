@@ -36,7 +36,7 @@ img {
     max-width: 100%;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
     .brief-info {
         width: 90%;
     }

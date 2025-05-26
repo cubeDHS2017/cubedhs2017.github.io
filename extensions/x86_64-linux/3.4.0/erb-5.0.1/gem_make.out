@@ -1,0 +1,18 @@
+current directory: /home/douglas/code/cubedhs2017.github.io/gems/erb-5.0.1/ext/erb/escape
+/usr/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/douglas/code/cubedhs2017.github.io/gems/erb-5.0.1/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20250525-491911-ubexdy sitelibdir\=./.gem.20250525-491911-ubexdy clean
+
+current directory: /home/douglas/code/cubedhs2017.github.io/gems/erb-5.0.1/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20250525-491911-ubexdy sitelibdir\=./.gem.20250525-491911-ubexdy
+compiling escape.c
+linking shared-object erb/escape.so
+
+current directory: /home/douglas/code/cubedhs2017.github.io/gems/erb-5.0.1/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20250525-491911-ubexdy sitelibdir\=./.gem.20250525-491911-ubexdy install
+/usr/bin/install -c -m 0755 escape.so ./.gem.20250525-491911-ubexdy/erb
+
+current directory: /home/douglas/code/cubedhs2017.github.io/gems/erb-5.0.1/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20250525-491911-ubexdy sitelibdir\=./.gem.20250525-491911-ubexdy clean

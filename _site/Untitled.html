@@ -1,0 +1,153 @@
+<link href="/assets/css/syntax.css" rel="stylesheet">
+
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+    :root {
+        color: #ccb7a7;
+        background-color: #38322b;
+        font-size: 18;
+    }
+
+    a, p, h1, h2, h3 {
+      font-family: "Spectral", serif;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+    }
+
+    h1, h2 {
+        color: #ABC4AA;
+    }
+
+    main {
+        font-size: 1.2rem;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    header {
+        width: 50%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+    }
+    a:link, a:visited {
+        text-decoration: none;
+        font-weight: normal;
+        font-size: 24px;
+        color: cyan;
+    }
+    .mainl {
+        color: purple;
+    }
+    .head-same-line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .head-same-line > * {
+        margin: 5px;
+    }
+    .tags {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tags > * {
+        margin: 5px;
+    }
+    blockquote {
+        background-color: red;
+        border-left: 5px solid #ccc;
+        margin: 1.5em 10px;
+        padding: 0.5em 10px;
+        font-style: italic;
+    }
+    blockquote.note {
+        background-color: #e7f2fa;
+        border-left-color: #2196f3;
+    }
+    blockquote {
+      position: relative;
+      margin: 1.5em 0;
+      padding: 1em 1em 1em 2em;
+      border-left: 4px solid;
+    }
+
+    blockquote::before {
+      position: absolute;
+      top: -0.5em;
+      left: 1em;
+      padding: 0 0.5em;
+      background: white;
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+
+    blockquote::after {
+      position: absolute;
+      top: -0.2em;
+      left: 0.5em;
+      font-size: 1.2em;
+    }
+
+    blockquote.warning {
+      background-color: #fff3e0;
+      border-color: #ff9800;
+    }
+
+    blockquote.warning::before {
+      content: "Warning";
+      color: #ff9800;
+    }
+
+    blockquote.quote {
+      background-color: #e7f2fa;
+      border-color: #2196f3;
+    }
+
+    blockquote.quote::before {
+      content: "Quote";
+      color: #2196f3;
+    }
+</style>
+
+
+<header>
+    <div class="post-header">
+        <a href="http://localhost:4000", class="mainl">Home</a>
+        <div class="head-same-line">
+            <a href="google.com">About</a>
+            <a href="google.com">Blog</a>
+            <a href="https://www.reddit.com">RSS</a>
+        </div>
+    </div>
+    <hr>
+    <div class="tags">
+    <p>Tags:</p>
+            <a href="/archive.html#Homelab">
+                #Homelab
+            </a>
+        </div>
+</header>
+<div>
+    <main>
+        <h1>My Homelab Experience After 13 Months</h1>
+        <p>I start my homelab journey on April 4th 2024. Well it started before that as I was researching stuff but that was the day that I installed Proxmox on my family’s old desktop computer. The next few days I spent time installing different Linux VMs, Linux Containers and Windows 11 on Proxomx. It was a blast I was learning so much and I had so many things to setup. I started install docker containers on a VM.</p>
+
+<p>Then I had this idea that I could use a physical monitor, keyboard, and mouse with a VM without a dedicated GPU. I ran some pretty devastating commands on the Proxmox host which made it completely unusable. That taught me one of the biggest lessons don’t do breaking changes on a server that has not been having backups. After running a command Proxmox just completely broke leaving me with one option, reinstall losing all my data. After that I have been very careful even time I run commands on the Proxmox host. I have also tried to be better about taking backups of my VMs and data so that if I have a problem in the future I don’t lose all my data.</p>
+
+<p>Another thing I quickly learned was host Docker worked. At first I was just running docker start commands and pasting random docker compose files and running them. After using Docker for a few months I had learned how to work with docker ports, images, and data. I still am no Docker expert but I know enough to ensure my containers are running safely and should not have any problems.</p>
+
+<p>Then I started using PiHole a few months into using my homelab. I also setup Tailscale so that I can remotely reach my homelab. I also setup PiHole with custom DNS records and used Nginx to assign all my services there own domain name so that I do not need to memorize IPs and ports numbers.</p>
+
+<p>Another thing I setup around this time was my PostgreSQL database. I install PostgreSQL along with PGAdmin to access my database from my web browser. I started to use this database to store data from random projects and also for my health data that I store in my homelab.</p>
+
+<p>n8n</p>
+
+<p>Then very recently i started messing with Kubernetes and setting up my infrastructure as code (IaC).</p>
+
+    </main>
+</div>

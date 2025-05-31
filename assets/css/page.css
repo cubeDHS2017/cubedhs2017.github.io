@@ -131,3 +131,34 @@ h1 {
 }
 
 
+.brief-info {
+  text-align: left;
+  max-width: 700px;
+  margin: auto;
+}
+.brief-info ul {
+  padding-left: 1.5em;
+}
+
+
+h2 {
+  position: relative;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 75%;
+  height: 2px;
+  background: linear-gradient(to right, #333, transparent);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+
+h4 {
+  margin-bottom: -0.2em; /* adjust as needed */
+}

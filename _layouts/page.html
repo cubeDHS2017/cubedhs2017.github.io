@@ -1,0 +1,34 @@
+<!-- _layouts/page.html -->
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/assets/css/page.css">
+  {% if jekyll.environment == "production" %}
+    <script defer src="https://dietpi.tailcad0b.ts.net:3535/script.js" data-website-id="c46034de-8d0b-42eb-bde1-6f2c715b3018"></script>
+  {% endif %}
+</head>
+<body>
+  <a href="/">
+    <img src="/assets/doug_pic.png" alt="">
+  </a>
+  <h1>Douglas Smith</h1>
+  <hr>
+  <div class="site-links">
+    <a href="/about.html" class="fancy-link">About</a>
+    <a href="/blog.html" class="fancy-link">Blog</a>
+    <a href="/uses.html" class="fancy-link">Uses</a>
+    <a href="/contact.html" class="fancy-link">Contact</a>
+  </div>
+
+  <div class="brief-info">
+    {{ content }}
+  </div>
+</body>
+</html>
+
+<script>
+console.log("I knew someone would find this. Look for some more easter eggs throughout the rest of my site.");
+</script>

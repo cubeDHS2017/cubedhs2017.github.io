@@ -3,7 +3,6 @@ layout: page
 title: Uses
 permalink: /uses/
 ---
-
 ## Hardware
 
 ### Laptops

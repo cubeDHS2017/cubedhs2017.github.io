@@ -1,9 +1,6 @@
 ---
 layout: 
 ---
-{% if jekyll.environment == "production" %}
-    <script defer src="https://dietpi.tailcad0b.ts.net:3535/script.js" data-website-id="c46034de-8d0b-42eb-bde1-6f2c715b3018"></script>
-{% endif %}
 
 
 <?xml version="1.0" encoding="UTF-8"?>

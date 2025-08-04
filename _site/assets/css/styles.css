@@ -9,7 +9,7 @@ body {
     color: #bfbbbb;
     text-align: center;
     padding-top: 60px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .my-links {
@@ -62,9 +62,12 @@ a:link, a:visited {
     margin-right: 10px;
 }
 
+
 hr {
     width: 30%;
 }
+
+
 
 h1 { 
     padding: 0;

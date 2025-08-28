@@ -1,3 +1,7 @@
 {
-  "theme": "moonstone"
+  "theme": "obsidian",
+  "accentColor": "#4eb190",
+  "cssTheme": "",
+  "baseFontSize": 18,
+  "textFontFamily": "FiraCode Nerd Font"
 }
